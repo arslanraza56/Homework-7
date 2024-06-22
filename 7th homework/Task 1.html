@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navbar</title>
+ <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+     padding: 20px;
+      background-color: #f5f5f5; /* Light gray background */
+      box-shadow: 0 0 3px 3px wheat; /* 3px wheat colored ridge border */
+    
+      align-items: center;
+    }
+
+    .navbar a {
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+      font-size: x-large;
+    }
+    .floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Example box shadow */
+}
+
+/* Additional styling if needed */
+.floating-button:hover {
+    background-color:wheat; /* Example hover color */
+}
+.content{
+  height: 50vh;
+  width: 40vh;
+  background-color: purple;
+  color: white;
+  overflow: hidden;
+  
+}
+.content img{
+  height: 20vh;
+  width: 20vh;
+  
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <center>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    </center>
+  </nav>
+
+  <div class="content">
+    <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="">
+    <div class="innercontent">
+    <h1>HELLO EVERYONE</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  </div>
+  <button class="floating-button">Button</button>
+
+ 
+
+</body>
+</html>
